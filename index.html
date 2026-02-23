@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon & Rachel Window Cleaners</title>
+  <meta name="description" content="Friendly, professional window cleaning in Bricket Wood, St Albans and surrounding areas. Pure water & traditional methods. Frames & sills cleaned. Free quotes." />
+
+  <!-- Elfsight (Google Reviews widget) -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur" style="border-color: rgba(11,27,74,.12);">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex items-center justify-between py-3">
+
+        <a href="#top" class="flex items-center gap-3">
+          <img
+            src="./images/logo-2026.png"
+            alt="Simon & Rachel Window Cleaners Logo"
+            class="h-14 w-auto"
+          />
+          <div class="leading-tight">
+            <div class="font-bold text-navy text-lg">Simon & Rachel Window Cleaners</div>
+            <div class="text-xs text-slate-500">Bricket Wood • St Albans • Park Street • Surrounding Areas</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-navy">
+          <a class="hover:opacity-80" href="#services">Services</a>
+          <a class="hover:opacity-80" href="#why">Why us</a>
+          <a class="hover:opacity-80" href="#gallery">Gallery</a>
+          <a class="hover:opacity-80" href="#reviews">Reviews</a>
+          <a class="hover:opacity-80" href="#contact">Contact</a>
+
+          <a class="btn btn-primary" href="https://wa.me/447311417016" target="_blank" rel="noopener">
+            WhatsApp us
+          </a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden rounded-xl border px-3 py-2 text-sm font-bold"
+          style="border-color: rgba(11,27,74,.18); color: var(--navy);">
+          Menu
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="hidden md:hidden pb-3">
+        <div class="grid gap-2 text-sm font-bold text-navy">
+          <a class="rounded-xl px-3 py-2 hover:bg-slate-100" href="#services">Services</a>
+          <a class="rounded-xl px-3 py-2 hover:bg-slate-100" href="#why">Why us</a>
+          <a class="rounded-xl px-3 py-2 hover:bg-slate-100" href="#gallery">Gallery</a>
+          <a class="rounded-xl px-3 py-2 hover:bg-slate-100" href="#reviews">Reviews</a>
+          <a class="rounded-xl px-3 py-2 hover:bg-slate-100" href="#contact">Contact</a>
+
+          <a class="btn btn-primary" href="https://wa.me/447311417016" target="_blank" rel="noopener">
+            WhatsApp us
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero-bg relative overflow-hidden">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-20">
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+
+          <!-- Left -->
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1 text-xs font-bold glass"
+               style="border-color: rgba(11,27,74,.12); color: var(--navy);">
+              <span class="brand-pink">●</span> Friendly, professional, family-run
+            </p>
+
+            <h1 class="mt-5 text-4xl md:text-6xl font-extrabold leading-tight text-navy">
+              Sparkling windows.<br />
+              <span class="brand-pink">Tidy frames & sills.</span>
+            </h1>
+
+            <p class="mt-4 text-lg text-slate-700 max-w-xl">
+              Professional residential and commercial window cleaning using <strong>pure water</strong> and <strong>traditional</strong> methods.
+              Reliable regular maintenance and one-off deep cleans.
+            </p>
+
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+              <a href="#quote" class="btn btn-accent">Get a quote</a>
+              <a href="#gallery" class="btn btn-primary" style="background: rgba(11,27,74,.92);">See our work</a>
+            </div>
+
+            <div class="mt-7 flex flex-wrap gap-3 text-sm font-bold" style="color: rgba(11,27,74,.85);">
+              <span class="rounded-full bg-white px-3 py-1 border glass" style="border-color: rgba(11,27,74,.12);">Pure water & traditional</span>
+              <span class="rounded-full bg-white px-3 py-1 border glass" style="border-color: rgba(11,27,74,.12);">Frames & sills cleaned</span>
+              <span class="rounded-full bg-white px-3 py-1 border glass" style="border-color: rgba(11,27,74,.12);">Regular visits available</span>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="card p-6 glass">
+            <div class="space-y-4">
+
+              <img
+                src="./images/van-logo.png"
+                alt="Simon & Rachel Window Cleaners"
+                class="mx-auto max-h-28 w-auto rounded-xl border bg-white p-3"
+                style="border-color: rgba(11,27,74,.12);"
+              />
+
+              <!-- WhatsApp panel (premium) -->
+              <div class="card p-6 bg-white">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full" style="background: var(--sky); border: 1px solid rgba(11,27,74,.12);">
+                    <!-- WhatsApp Logo -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6" aria-hidden="true">
+                      <path fill="#25D366" d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.8L.5 31.5l7.9-2c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.2c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.2-4.6-.3-.5C3.8 20.6 3.2 18.4 3.2 16 3.2 8.9 8.9 3.2 16 3.2S28.8 8.9 28.8 16 23.1 28.7 16 28.7z"/>
+                      <path fill="#fff" d="M23.2 19.2c-.4-.2-2.3-1.1-2.7-1.2-.4-.2-.6-.2-.9.2-.3.4-1 1.2-1.3 1.4-.2.2-.5.2-.9 0-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.9.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.6-.7-.9-.7h-.8c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 3 0 1.8 1.3 3.6 1.5 3.9.2.3 2.5 3.8 6.1 5.3 3.6 1.5 3.6 1 4.3.9.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <div class="text-xs font-bold" style="color: rgba(11,27,74,.65);">Fast response</div>
+                    <div class="text-xl font-extrabold text-navy">WhatsApp for a quote</div>
+                  </div>
+                </div>
+
+                <p class="mt-4 text-slate-600">
+                  Send your postcode and (if possible) a quick photo. We’ll reply with pricing and availability.
+                </p>
+
+                <a class="mt-5 btn btn-primary w-full" href="https://wa.me/447311417016" target="_blank" rel="noopener">
+                  Message on WhatsApp
+                </a>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div class="card p-4">
+                  <div class="text-xs font-bold" style="color: rgba(11,27,74,.65);">Based in</div>
+                  <div class="font-extrabold text-navy">Bricket Wood</div>
+                </div>
+                <div class="card p-4">
+                  <div class="text-xs font-bold" style="color: rgba(11,27,74,.65);">Serving</div>
+                  <div class="font-extrabold text-navy">St Albans + nearby</div>
+                </div>
+              </div>
+
+              <div class="card p-4">
+                <div class="text-xs font-bold" style="color: rgba(11,27,74,.65);">Customer reviews</div>
+                <a class="mt-2 inline-flex items-center gap-2 font-extrabold text-navy hover:underline"
+                   href="https://share.google/3GhBTsH5VzvcYUm4v" target="_blank" rel="noopener">
+                  ⭐ View our 5-Star Google Reviews <span aria-hidden="true">↗</span>
+                </a>
+                <a class="mt-2 inline-flex items-center gap-2 font-extrabold text-navy hover:underline"
+                   href="https://nextdoor.co.uk/pages/simon-rachel-window-cleaners-bricket-wood-how-wood-park-street/" target="_blank" rel="noopener">
+                  View on Nextdoor <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="mx-auto max-w-6xl px-4 section-pad">
+      <div class="text-center">
+        <h2 class="text-4xl font-extrabold text-navy">Services</h2>
+        <p class="mt-3 text-slate-600">Professional, reliable cleans using the right method for the job.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <!-- Service 1 -->
+        <div class="card overflow-hidden">
+          <div class="relative aspect-[4/3] bg-slate-100">
+            <img src="./images/residential.jpg" class="img-cover absolute inset-0" alt="Residential window cleaning" loading="lazy" />
+            <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 40%, rgba(11,27,74,.78));"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <h3 class="text-white text-2xl font-extrabold">Residential</h3>
+              <p class="mt-1 text-white/90 text-sm font-bold">Regular maintenance or deep cleans.</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-slate-600">
+              A thorough clean that lifts the whole look of your home and lets the light back in.
+            </p>
+            <a href="#quote" class="btn btn-accent mt-5">Get a quote</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card overflow-hidden">
+          <div class="relative aspect-[4/3] bg-slate-100">
+            <img src="./images/inside.jpg" class="img-cover absolute inset-0" alt="Inside window cleaning" loading="lazy" />
+            <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 40%, rgba(11,27,74,.78));"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <h3 class="text-white text-2xl font-extrabold">Inside Windows</h3>
+              <p class="mt-1 text-white/90 text-sm font-bold">Smudge-free, tidy finish.</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-slate-600">
+              Ideal before guests, viewings, or just a fresh reset. Careful work with a premium finish.
+            </p>
+            <a href="#quote" class="btn btn-accent mt-5">Get a quote</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card overflow-hidden">
+          <div class="relative aspect-[4/3] bg-slate-100">
+            <img src="./images/conservatory.jpg" class="img-cover absolute inset-0" alt="Conservatory cleaning" loading="lazy" />
+            <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 40%, rgba(11,27,74,.78));"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <h3 class="text-white text-2xl font-extrabold">Conservatories</h3>
+              <p class="mt-1 text-white/90 text-sm font-bold">Roof panels, frames and glass.</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-slate-600">
+              Reduce grime and algae build-up and bring your conservatory back to life.
+            </p>
+            <a href="#quote" class="btn btn-accent mt-5">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="mx-auto max-w-6xl px-4 section-pad">
+      <div class="text-center">
+        <h2 class="text-4xl font-extrabold text-navy">Gallery</h2>
+        <p class="mt-3 text-slate-600">Recent work across Bricket Wood, St Albans & surrounding areas.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Use your existing files -->
+        <div class="card overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="./images/gallery-1.jpeg" class="img-cover transition duration-700 ease-out hover:scale-110" alt="Gallery 1" loading="lazy" />
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="./images/gallery-2.jpg" class="img-cover transition duration-700 ease-out hover:scale-110" alt="Gallery 2" loading="lazy" />
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="./images/gallery-3.jpg" class="img-cover transition duration-700 ease-out hover:scale-110" alt="Gallery 3" loading="lazy" />
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="./images/gallery-4.jpg" class="img-cover transition duration-700 ease-out hover:scale-110" alt="Gallery 4" loading="lazy" />
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="./images/gallery-5.jpg" class="img-cover transition duration-700 ease-out hover:scale-110" alt="Gallery 5" loading="lazy" />
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="./images/gallery-6.jpg" class="img-cover transition duration-700 ease-out hover:scale-110" alt="Gallery 6" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section id="why" class="section-pad" style="background: linear-gradient(180deg, rgba(214,234,248,.55), rgba(214,234,248,.20)); border-top: 1px solid rgba(11,27,74,.12); border-bottom: 1px solid rgba(11,27,74,.12);">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="text-center">
+          <h2 class="text-4xl font-extrabold text-navy">Why choose us</h2>
+          <p class="mt-3 text-slate-600 max-w-2xl mx-auto">
+            Premium results, friendly local service, and the right method for the job.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="card p-8">
+            <div class="text-3xl">⭐</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-navy">5-star local reputation</h3>
+            <p class="mt-3 text-slate-600">
+              Trusted by homeowners across Bricket Wood, St Albans, Park Street and nearby areas.
+            </p>
+          </div>
+
+          <div class="card p-8">
+            <div class="text-3xl">💧</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-navy">Pure water + traditional</h3>
+            <p class="mt-3 text-slate-600">
+              We use the method that gives the best finish. Frames and sills cleaned as standard.
+            </p>
+          </div>
+
+          <div class="card p-8">
+            <div class="text-3xl">🤝</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-navy">Reliable & respectful</h3>
+            <p class="mt-3 text-slate-600">
+              We turn up when we say we will, treat your home with care, and keep you informed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="mx-auto max-w-6xl px-4 section-pad">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-extrabold text-navy">Google Reviews</h2>
+        <p class="mt-3 text-slate-600">Trusted by local homeowners in Bricket Wood, St Albans & surrounding areas.</p>
+      </div>
+
+      <div class="elfsight-app-2d23ce59-4e9d-40a8-a919-daa3224d1a4a" data-elfsight-app-lazy></div>
+
+      <div class="mt-10 flex justify-center">
+        <a href="https://share.google/3GhBTsH5VzvcYUm4v" target="_blank" rel="noopener" class="btn btn-primary">
+          View all reviews on Google
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact + Quote -->
+    <section id="contact" class="mx-auto max-w-6xl px-4 section-pad">
+      <div class="card p-8">
+        <div class="grid gap-10 md:grid-cols-2 md:items-start">
+          <!-- Left -->
+          <div>
+            <h2 class="text-4xl font-extrabold text-navy">Request a quote</h2>
+            <p class="mt-3 text-slate-600">
+              Quickest option: WhatsApp us. Or use the form and we’ll reply by email.
+            </p>
+
+            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a class="btn btn-primary" href="https://wa.me/447311417016" target="_blank" rel="noopener">WhatsApp us</a>
+              <a class="btn" style="border: 1px solid rgba(11,27,74,.18); color: var(--navy); background:#fff;"
+                 href="mailto:srcleaningworksltd@proton.me">Email us</a>
+            </div>
+
+            <div class="mt-8 rounded-3xl p-7" style="background: var(--sky); border: 1px solid rgba(11,27,74,.12);">
+              <div class="text-sm font-bold" style="color: rgba(11,27,74,.65);">Contact details</div>
+              <div class="mt-4 grid gap-3 text-navy font-bold">
+                <div>
+                  <div class="text-xs" style="color: rgba(11,27,74,.65);">Address</div>
+                  <div>4 The Uplands, St Albans, AL2 3UW</div>
+                </div>
+                <div>
+                  <div class="text-xs" style="color: rgba(11,27,74,.65);">Email</div>
+                  <a class="underline underline-offset-4" href="mailto:srcleaningworksltd@proton.me">srcleaningworksltd@proton.me</a>
+                </div>
+                <div>
+                  <div class="text-xs" style="color: rgba(11,27,74,.65);">Phone</div>
+                  <a class="underline underline-offset-4" href="tel:+447311417016">+44 7311 417016</a>
+                </div>
+              </div>
+              <p class="mt-5 text-xs" style="color: rgba(11,27,74,.65);">
+                Serving Bricket Wood, St Albans, Park Street and surrounding areas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div id="quote">
+            <h3 class="text-2xl font-extrabold text-navy">Quote form</h3>
+            <p class="mt-2 text-slate-600">Fill this in and we’ll get back to you.</p>
+
+            <form
+              action="https://formspree.io/f/meelrwep"
+              method="POST"
+              class="mt-6 rounded-3xl border p-6"
+              style="border-color: rgba(11,27,74,.12); background:#fff;"
+            >
+              <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-bold text-navy">Full name</label>
+                  <input name="name" required
+                    class="mt-2 w-full rounded-xl border px-4 py-3 text-slate-900 outline-none"
+                    style="border-color: rgba(11,27,74,.14);"
+                    placeholder="Your name" />
+                </div>
+
+                <div>
+                  <label class="text-sm font-bold text-navy">Email</label>
+                  <input type="email" name="email" required
+                    class="mt-2 w-full rounded-xl border px-4 py-3 text-slate-900 outline-none"
+                    style="border-color: rgba(11,27,74,.14);"
+                    placeholder="you@email.com" />
+                </div>
+
+                <div>
+                  <label class="text-sm font-bold text-navy">Mobile</label>
+                  <input type="tel" name="phone"
+                    class="mt-2 w-full rounded-xl border px-4 py-3 text-slate-900 outline-none"
+                    style="border-color: rgba(11,27,74,.14);"
+                    placeholder="07..." />
+                </div>
+
+                <div>
+                  <label class="text-sm font-bold text-navy">Postcode</label>
+                  <input name="postcode" required
+                    class="mt-2 w-full rounded-xl border px-4 py-3 text-slate-900 outline-none"
+                    style="border-color: rgba(11,27,74,.14);"
+                    placeholder="AL2 3UW" />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label class="text-sm font-bold text-navy">What do you need cleaning?</label>
+                  <textarea name="message" rows="4" required
+                    class="mt-2 w-full rounded-xl border px-4 py-3 text-slate-900 outline-none"
+                    style="border-color: rgba(11,27,74,.14);"
+                    placeholder="Outside windows, inside, conservatory, frequency, any access notes…"></textarea>
+                </div>
+              </div>
+
+              <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <p class="text-xs text-slate-500">
+                  By submitting, you consent to us using your details to respond to your enquiry.
+                </p>
+
+                <button type="submit" class="btn btn-accent">
+                  Send quote request
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white" style="border-top: 1px solid rgba(11,27,74,.12);">
+      <div class="mx-auto max-w-6xl px-4 py-8">
+        <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div class="text-sm text-slate-600 font-bold">© <span id="year"></span> Simon & Rachel Window Cleaners</div>
+          <div class="smallprint">
+            Simon & Rachel Window Cleaners is a trading name of <strong class="text-navy">S&amp;R Cleaning Works Limited</strong> (Company No. 16753203)
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+    btn?.addEventListener("click", () => menu.classList.toggle("hidden"));
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

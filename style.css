@@ -1,0 +1,113 @@
+/* -----------------------
+   Brand + Typography
+------------------------ */
+:root{
+  --sky: #D6EAF8;
+  --sky-2:#A7C7E7;
+  --navy:#0B1B4A;     /* premium dark blue */
+  --navy-2:#1E2FA6;   /* your existing dark blue */
+  --pink:#FF1E8A;     /* accent */
+  --ink:#0F172A;
+  --muted:#475569;
+  --card:#ffffff;
+  --border: rgba(15, 23, 42, .10);
+}
+
+@font-face{
+  font-family: "Souvenir";
+  src: url("./fonts/Souvenir.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Souvenir";
+  src: url("./fonts/SouvenirB.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Souvenir";
+  src: url("./fonts/SouvenirI.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: "Souvenir";
+  src: url("./fonts/SouvenirBI.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: "Souvenir", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+h1,h2,h3 { letter-spacing: .2px; }
+p { line-height: 1.6; }
+
+/* -----------------------
+   Helpers
+------------------------ */
+.glass {
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.text-navy { color: var(--navy); }
+.bg-navy { background: var(--navy); }
+.bg-sky { background: var(--sky); }
+.border-sky { border-color: rgba(11,27,74,.14); }
+
+.brand-pink { color: var(--pink); }
+.bg-brand-pink { background: var(--pink); }
+
+/* Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 700;
+  transition: transform .08s ease, opacity .2s ease, box-shadow .2s ease;
+}
+.btn:active{ transform: translateY(1px); }
+.btn-primary{
+  background: var(--navy);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(11,27,74,.12);
+}
+.btn-primary:hover{ opacity:.95; }
+.btn-accent{
+  background: var(--pink);
+  color:#fff;
+  box-shadow: 0 10px 20px rgba(255,30,138,.18);
+}
+.btn-accent:hover{ opacity:.92; }
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, .06);
+}
+
+/* Make Tailwind container feel more premium */
+.section-pad{ padding-top: 4.2rem; padding-bottom: 4.2rem; }
+
+/* Hero background */
+.hero-bg{
+  background:
+    radial-gradient(900px 420px at 55% 0%, rgba(167,199,231,.70), transparent 60%),
+    radial-gradient(700px 420px at 0% 30%, rgba(214,234,248,.80), transparent 55%),
+    linear-gradient(180deg, rgba(214,234,248,.65), rgba(214,234,248,.25));
+}
+
+/* Images: prevent “squash” */
+.img-cover { width:100%; height:100%; object-fit: cover; }
+
+/* Footer small print */
+.smallprint{
+  font-size: 12px;
+  color: rgba(71,85,105,.9);
+}
